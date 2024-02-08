@@ -1,168 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.4.3.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="00:00:00"/>
-	<style type="text/css">
-		@page { size: 8.27in 11.69in; margin: 0.79in }
-		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
-		pre { background: transparent }
-		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
-		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
-		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
-	</style>
-</head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">** start of undefined **
-
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;Survey Form&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot; /&gt;
-  &lt;/head&gt;
-   &lt;body&gt;
-    &lt;h1 id=&quot;title&quot;&gt; freeCodeCamp Survey Form&lt;/h1&gt;
-    &lt;p id=&quot;description&quot;&gt;Thank you for taking the time to help us improve the platform&lt;/p&gt;
-&lt;form id=&quot;survey-form&quot;&gt;
-  &lt;label id=&quot;name-label&quot; for=&quot;name&quot;&gt;Name &lt;input class=&quot;info&quot; id=&quot;name&quot; type=&quot;text&quot; placeholder=&quot; Enter your name&quot; required /&gt;&lt;/label&gt;
-  &lt;label id=&quot;email-label&quot; for=&quot;email&quot;&gt;Email &lt;input class=&quot;info&quot; id=&quot;email&quot; type=&quot;email&quot; placeholder=&quot; Enter your email&quot; required /&gt;&lt;/label&gt;
-  &lt;label id=&quot;number-label&quot; for=&quot;age&quot;&gt;Age (optional) &lt;input class=&quot;info&quot; id=&quot;number&quot; type=&quot;number&quot; min=&quot;10&quot; max=&quot;99&quot; placeholder=&quot;Enter your age&quot;required /&gt;&lt;/label&gt;
-  &lt;label class=&quot;options&quot; for=&quot;dropdown&quot;&gt;Which option best describes your current role?
-          &lt;select id=&quot;dropdown&quot; name=&quot;dropdown&quot;&gt;
-            &lt;option value=&quot;&quot;&gt;(select current role)&lt;/option&gt;
-            &lt;option value=&quot;1&quot;&gt;Student&lt;/option&gt;
-            &lt;option value=&quot;2&quot;&gt;Full Time Job&lt;/option&gt;
-            &lt;option value=&quot;3&quot;&gt;Full Time Learner&lt;/option&gt;
-            &lt;option value=&quot;4&quot;&gt;Prefer not to say&lt;/option&gt;
-            &lt;option value=&quot;5&quot;&gt;Other&lt;/option&gt;
-          &lt;/select&gt;
-          &lt;/label&gt;
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+   <body>
+    <h1 id="title"> Student Observation Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve by completing this survey</p>
+<form id="survey-form">
+  <label id="name-label" for="name">Name <input class="info" id="name" type="text" placeholder=" Enter your name" required /></label>
+  <label id="email-label" for="email">Email <input class="info" id="email" type="email" placeholder=" Enter your email" required /></label>
+  <label id="number-label" for="age">Age (optional) <input class="info" id="number" type="number" min="10" max="99" placeholder="Enter your age"required /></label>
+  <label class="options" for="dropdown">Why did you take this class?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select current role)</option>
+            <option value="1">For Fun</option>
+            <option value="2">Gain additional job skill</option>
+            <option value="3">required by current employer</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+          </label>
         
-  &lt;label&gt;Would you recommend freeCodeCamp to a friend?&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;radio&quot; id=&quot;recommend&quot; type=&quot;radio&quot; name=&quot;Definetly-Maybe-Not Sure&quot; value=&quot;Definetly&quot; checked /&gt;Definetly&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;radio&quot; id=&quot;recommend&quot; type=&quot;radio&quot; name=&quot;Definetly-Maybe-Not Sure&quot; value=&quot;Maybe&quot;/&gt;Maybe&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;radio&quot; id=&quot;recommend&quot; type=&quot;radio&quot; name=&quot;Definetly-Maybe-Not Sure&quot; value=&quot;Not Sure&quot;/&gt;Not Sure&lt;/label&gt;
-  &lt;label class=&quot;options&quot; for=&quot;dropdown&quot;&gt;What is your favorite feature of freeCodeCamp?
-          &lt;select id=&quot;dropdown&quot; name=&quot;dropdown&quot;&gt;
-            &lt;option value=&quot;&quot;&gt;(select an option)&lt;/option&gt;
-            &lt;option value=&quot;1&quot;&gt;Challenges&lt;/option&gt;
-            &lt;option value=&quot;2&quot;&gt;Projects&lt;/option&gt;
-            &lt;option value=&quot;3&quot;&gt;Community&lt;/option&gt;
-            &lt;option value=&quot;4&quot;&gt;Open Source&lt;/option&gt;
-          &lt;/select &gt;
-  &lt;/label&gt;
+  <label>Would you recommend this course to a friend?</label>
+  <label for="recommend"> <input class="radio" id="recommend" type="radio" name="Definetly-Maybe-Not Sure" value="Definetly" checked />Definetly</label>
+  <label for="recommend"> <input class="radio" id="recommend" type="radio" name="Definetly-Maybe-Not Sure" value="Maybe"/>Maybe</label>
+  <label for="recommend"> <input class="radio" id="recommend" type="radio" name="Definetly-Maybe-Not Sure" value="Not Sure"/>Not Sure</label>
+  <label class="options" for="dropdown">What is your favorite part of this course?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select an option)</option>
+            <option value="1">Challenges</option>
+            <option value="2">Assignments</option>
+            <option value="3">Community</option>
+            <option value="4">presentations</option>
+          </select >
+  </label>
  
-  &lt;label&gt;What would you like to see improved? (Check all that apply)&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;checkbox&quot; id=&quot;recommend&quot; type=&quot;checkbox&quot; value=&quot;0&quot;  /&gt;Front-end Projects&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;checkbox&quot; id=&quot;recommend&quot; type=&quot;checkbox&quot; value=&quot;1&quot; /&gt;Back-end Projects&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;checkbox&quot; id=&quot;recommend&quot; type=&quot;checkbox&quot; value=&quot;2&quot;/&gt;Data Visualization&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;checkbox&quot; id=&quot;recommend&quot; type=&quot;checkbox&quot; value=&quot;3&quot;  /&gt;Challenges&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;checkbox&quot; id=&quot;recommend&quot; type=&quot;checkbox&quot; value=&quot;4&quot;  /&gt;Open Source Community&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;checkbox&quot; id=&quot;recommend&quot; type=&quot;checkbox&quot; value=&quot;5&quot;  /&gt;Gitter help rooms&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;checkbox&quot; id=&quot;recommend&quot; type=&quot;checkbox&quot; value=&quot;6&quot; /&gt;Videos&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;checkbox&quot; id=&quot;recommend&quot; type=&quot;checkbox&quot; value=&quot;7&quot; /&gt;City Meetups&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;checkbox&quot; id=&quot;recommend&quot; type=&quot;checkbox&quot; value=&quot;8&quot; /&gt;Wiki&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;checkbox&quot; id=&quot;recommend&quot; type=&quot;checkbox&quot; value=&quot;9&quot;/&gt;Forum&lt;/label&gt;
-  &lt;label for=&quot;recommend&quot;&gt; &lt;input class=&quot;checkbox&quot; id=&quot;recommend&quot; type=&quot;checkbox&quot; value=&quot;10&quot;  /&gt;Additional Courses&lt;/label&gt;
+  <label>What would you like to see improved? (Check all that apply)</label>
+  <label for="recommend"> <input class="checkbox" id="recommend" type="checkbox" value="0"  />More Individual Assignments</label>
+  <label for="recommend"> <input class="checkbox" id="recommend" type="checkbox" value="1" />More Group Assignments</label>
+  <label for="recommend"> <input class="checkbox" id="recommend" type="checkbox" value="2"/>Visual lecture material</label>
+  <label for="recommend"> <input class="checkbox" id="recommend" type="checkbox" value="3"  />Instructor Accessibility</label>
+  <label for="recommend"> <input class="checkbox" id="recommend" type="checkbox" value="4"  />Material Complexity</label>
+  <label for="recommend"> <input class="checkbox" id="recommend" type="checkbox" value="5"  />Additional External Resources</label>
+  <label for="recommend"> <input class="checkbox" id="recommend" type="checkbox" value="6" />Videos</label>
+  <label for="recommend"> <input class="checkbox" id="recommend" type="checkbox" value="7" />Orientation</label>
+  <label for="recommend"> <input class="checkbox" id="recommend" type="checkbox" value="8" />application Process</label>
+  <label for="recommend"> <input class="checkbox" id="recommend" type="checkbox" value="9"/>Forum</label>
+  <label for="recommend"> <input class="checkbox" id="recommend" type="checkbox" value="10"  />Additional Courses</label>
 
-&lt;label class=&quot;options&quot; for=&quot;comments&quot;&gt;Any comments or suggestions?
-          &lt;textarea id=&quot;comments&quot; name=&quot;comments&quot; rows=&quot;8&quot; cols=&quot;69&quot; placeholder=&quot;Enter your comment here...&quot;&gt;&lt;/textarea&gt;
-        &lt;/label&gt;
-        &lt;input type=&quot;submit&quot; id=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+<label class="options" for="comments">Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="8" cols="69" placeholder="Enter your comment here..."></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit" />
 
-&lt;/form&gt;
-
-** end of undefined **
-
-** start of undefined **
-
-h1, p {
-  margin: .5em auto;
-  text-align: center;
-  color: white;
-}
-label {
-  display: block;
-  margin: 0.5rem 0;
-  font-size: 18;
-  padding-bottom: 1em;
-}
-input {
-  margin: 10px 0 0 0;
-  height: 2.5em;
-  font-size: 16;
-  border-radius: 5px;
-}
- input[type=&quot;radio&quot;] {
-   vertical-align:middle;
-    margin-right: .5rem;
- }
-input[type=&quot;checkbox&quot;]
-{
-    vertical-align:middle;
-    margin-right: .5rem;
-}
-
-form {
-  width: 60vw;
-  max-width: 650px;
-  min-width: 300px;
-  margin: 0 auto;
-  padding: 2em;
-  background-color: rgb(41, 36, 54);
-  color: white;
-}
-body {
-  background-color: rgb(104, 89, 144);
-  font-family: Tahoma;
-}
-input[type=&quot;submit&quot;] {
-  background-color: green;
-  color: White;
-  height: 40px;
-  font-size: 18;
-  width: 650px;
-
-}
-select {
-  width: 650px;
-  height: 40px;
-  font-size: 16;
-  border-radius: 5px;
-}
-option {
-  font-size: 16;
-}
-textarea {
-  font-size: 16;
-  }
-  fieldset {
-  padding:0px;
-  width:250px;
-  line-height:1.5;
-  }
-  .info {
-    width: 100%;;
-  }
-  .checkbox {
-  width: 20px;
-  height: 20px;
-  margin: 0;
-  padding: 0;
-    }
-  .radio {
-   width: 20px;
-  height: 20px;
-  margin: 0;
-  padding: 0;
-  }
- 
-
-** end of undefined **
-</pre>
-</body>
-</html>
+</form>
