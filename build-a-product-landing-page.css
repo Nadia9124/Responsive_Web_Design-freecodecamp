@@ -1,0 +1,77 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+html {
+  background-image: url(https://iili.io/J0jFXbn.md.jpg);
+  background-repeat: no repeat;
+   background-attachment: fixed;
+  background-size: cover;
+  margin: 0 auto;
+  color: rgb(64, 55, 39)
+}
+#header-img {
+  width: 5%;
+  float: left;
+}
+
+#nav-bar {
+  display: flex;
+  position: sticky;
+  align-items: right;
+  justify-content: space-between;
+  margin-top: 100px;
+  background: rgb(236, 212, 166)
+  
+}
+ .nav-list{
+            display: flex;
+            list-style: none;
+            font-size: 20px;
+            font-weight: bold;
+      
+            
+        }
+ 
+ .nav-list li {
+            margin-right: 20vh;
+            
+        }
+  form {
+    justify-content: center;
+    margin-top: 2%;
+  }
+div {
+  text-align: center;
+ 
+}
+#card_design {
+  height: 500Px;
+  width: auto;
+  object-fit: cover;
+  margin-left: 150px;
+}
+.card_designs {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  position: sticky;
+  align-items: right;
+  justify-content: space-around;
+   
+}
+.social_icons {
+  margin-left: 1700px;
+}
+p {
+  font-size: 18px;
+}
+h2 {
+  text-decoration: underline;
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+}
