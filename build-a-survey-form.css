@@ -1,0 +1,89 @@
+
+html {
+  background-image: url(https://iili.io/J0ypy0X.md.jpg);
+  background-repeat: no repeat;
+   background-attachment: fixed;
+  background-size: cover;
+  margin: 0 auto;
+}
+h1, p {
+  margin: .5em auto;
+  text-align: center;
+  color: black;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 18;
+  padding-bottom: 1em;
+}
+input {
+  margin: 10px 0 0 0;
+  height: 2.5em;
+  font-size: 16;
+  border-radius: 5px;
+}
+ input[type="radio"] {
+   vertical-align:middle;
+    margin-right: .5rem;
+ }
+input[type="checkbox"]
+{
+    vertical-align:middle;
+    margin-right: .5rem;
+}
+
+form {
+  width: 60vw;
+  max-width: 650px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: teal;
+  color: white;
+}
+body {
+ 
+  font-family: Tahoma;
+}
+input[type="submit"] {
+  background-color: rgb(84, 99, 99);
+  color: White;
+  height: 40px;
+  font-size: 18;
+  width: 650px;
+
+}
+select {
+  width: 650px;
+  height: 40px;
+  font-size: 16;
+  border-radius: 5px;
+}
+option {
+  font-size: 16;
+}
+textarea {
+  font-size: 16;
+  }
+  fieldset {
+  padding:0px;
+  width:250px;
+  line-height:1.5;
+  }
+  .info {
+    width: 100%;;
+  }
+  .checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+    }
+  .radio {
+   width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  }
+ 
